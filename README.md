@@ -174,16 +174,27 @@ Write a program that accepts `N` integers and a target number. Check if the targ
 
 ---
 
-### **7. Create a Simple Menu with Switch-Case**  
-Write a program that displays the following menu:  
-1. Add two numbers  
-2. Subtract two numbers  
-3. Multiply two numbers  
-The user chooses an option, enters two numbers, and the program performs the operation.  
-- **Hint:** Use switch-case for menu selection.  
+### **7. Problem Statement: Simple Calculator Menu Using Switch-Case**
 
----
+Write a program that acts as a simple calculator with a menu of options. The program should:
 
+1. Display the following menu to the user:
+    - **1. Add two numbers**
+        - Ask the user to input two numbers.
+        - Calculate and display their sum.
+    - **2. Subtract two numbers**
+        - Ask the user to input two numbers.
+        - Calculate and display the result of subtracting the second number from the first.
+    - **3. Multiply two numbers**
+        - Ask the user to input two numbers.
+        - Calculate and display their product.
+    - If the user selects any other option, display "Invalid choice."
+
+2. After performing a calculation, ask the user if they want to continue:
+    - If the user enters **'y' or 'Y'**, display the menu again.
+    - If the user enters **'n' or 'N'**, exit the program.
+
+3. Use a **switch-case** structure to handle the menu selection and operations.
 ### **8. Reverse an Array**  
 Write a program that accepts `N` integers from the user, stores them in an array, and prints the array in reverse order.  
 - **Hint:** Use a loop to iterate from the end of the array.  
