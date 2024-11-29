@@ -144,8 +144,8 @@ Write a program that takes an integer `N` as input and prints all numbers from `
 
 ---
 
-### **2. Find the Maximum of Three Numbers**  
-Write a program that takes three integers as input and prints the largest number.  
+### **2. Find the Maximum number from an array created by user input**  
+Write a program that takes number then set it in the array as input and prints the largest number.  
 - **Hint:** Use `if-else` conditions.  
 
 ---
