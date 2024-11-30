@@ -1,124 +1,107 @@
-### Multiple-Choice Questions on Strings
+### Multiple-Choice Questions on Strings (Based on the Lesson Code)
 
 1. What is the output of the following code?  
    ```cpp
-   char str[] = "Hello";
-   cout << str[0] << str[4];
+   char str[] = {'H', 'e', 'l', 'l', 'o', '\0'};
+   cout << str;
    ```
-   - A) `Ho`  
-   - B) `H`  
-   - C) `Hello`  
-   - D) Compilation error  
+   - A) `H`  
+   - B) `Hello`  
+   - C) `Hell`  
+   - D) Undefined behavior  
 
-2. Which of the following correctly initializes a string in C++?  
-   - A) `char str[] = {'H', 'e', 'l', 'l', 'o'};`  
-   - B) `string str = "Hello";`  
-   - C) `char str[] = "Hello";`  
-   - D) All of the above  
+2. Which of the following correctly initializes a character array with an implicit null character?  
+   - A) `char str[] = "Learn";`  
+   - B) `char str[5] = {'L', 'e', 'a', 'r', 'n'};`  
+   - C) `char str[] = {'L', 'e', 'a', 'r', 'n'};`  
+   - D) None of the above  
 
-3. What is the size of the string `char str[] = "Programming";` including the null character?  
-   - A) 10  
-   - B) 11  
-   - C) 12  
-   - D) Undefined  
-
-4. What will be the output of this code?  
-   ```cpp
-   string str = "World";
-   cout << str.size();
-   ```
+3. What will be the size of the array `char str[] = "Code";`?  
    - A) 4  
    - B) 5  
    - C) 6  
    - D) Undefined  
 
-5. How does a C-style string (`char array`) differ from a C++ `string`?  
-   - A) C-style strings require a null character for termination, while C++ strings do not.  
-   - B) C++ strings cannot handle spaces, but C-style strings can.  
-   - C) C-style strings are immutable, while C++ strings are mutable.  
-   - D) They are the same in terms of functionality.  
-
-6. What will be the output of the following code?  
+4. What happens when the following code is executed?  
    ```cpp
-   char str[] = "Learn";
-   cout << str[3];
+   char str[4] = "Test";
+   cout << str;
    ```  
-   - A) `L`  
-   - B) `a`  
-   - C) `r`  
-   - D) `n`  
+   - A) It prints `Test`.  
+   - B) It throws a compilation error.  
+   - C) It results in undefined behavior.  
+   - D) It prints `Tes`.  
 
-7. Which of the following statements is **true**?  
-   - A) `string s = "Text";` automatically includes a null character at the end.  
-   - B) `char s[] = "Text";` does not require a null character.  
-   - C) `string s[] = {"T", "e", "x", "t"};` creates a single string.  
-   - D) `string` is not supported in C++.  
-
-8. What does the following code output?  
+5. How is the string `"abcd"` represented in the following declaration?  
    ```cpp
-   string str1 = "Hello";
-   string str2 = "World";
-   cout << str1 + " " + str2;
+   char str[5] = "abcd";
    ```  
-   - A) `HelloWorld`  
-   - B) `Hello World`  
-   - C) Compilation error  
-   - D) Undefined behavior  
+   - A) As `{'a', 'b', 'c', 'd', '\0'}`  
+   - B) As `{'a', 'b', 'c', 'd'}`  
+   - C) As `{'a', 'b', 'c', 'd', 'e'}`  
+   - D) Compilation error  
 
-9. Which function is used to find the length of a string in C++?  
-   - A) `strlen()`  
-   - B) `length()`  
-   - C) `size()`  
-   - D) Both B and C  
+6. Which of the following will result in a valid C-style string?  
+   - A) `char str[] = {'T', 'e', 'x', 't'};`  
+   - B) `char str[] = "Text";`  
+   - C) `char str[4] = "Text";`  
+   - D) `char str[3] = {'T', 'e', '\0'};`  
 
-10. What is the output of the following code?  
-    ```cpp
-    string str = "Coder";
-    cout << str.substr(1, 3);
-    ```  
-    - A) `ode`  
-    - B) `ode `  
-    - C) `Code`  
-    - D) `oder`  
+7. What does the null character (`\0`) do in a character array?  
+   - A) Ends the string in a character array.  
+   - B) Indicates a new line.  
+   - C) Starts the string in a character array.  
+   - D) Indicates a special ASCII value.  
 
-11. Which is a valid way to append two strings in C++?  
-    - A) `str1 + str2`  
-    - B) `str1.append(str2)`  
-    - C) `str1 += str2`  
+8. Which of the following correctly prints the character `a` from the array?  
+   ```cpp
+   char str[] = "Data";
+   ```
+   - A) `cout << str[0];`  
+   - B) `cout << str[1];`  
+   - C) `cout << str[3];`  
+   - D) `cout << str[4];`  
+
+9. If `char str[] = {'H', 'i', '\0', 'T'};`, what will `cout << str;` print?  
+   - A) `HiT`  
+   - B) `Hi`  
+   - C) Undefined behavior  
+   - D) `H`  
+
+10. How is `char str[6] = "Hello";` different from `char str[] = "Hello";`?  
+    - A) The former explicitly specifies the size of the array.  
+    - B) The latter includes an extra null character.  
+    - C) Both are exactly the same.  
+    - D) The latter does not include a null character.  
+
+11. What happens if `char str[3] = "Hey";` is declared?  
+    - A) It throws a compilation error.  
+    - B) It results in undefined behavior.  
+    - C) It stores only `He`.  
+    - D) It stores `Hey` and truncates the null character.  
+
+12. Which of the following is a valid way to create a character array?  
+    - A) `char arr[5] = "abc";`  
+    - B) `char arr[] = {'a', 'b', 'c', '\0'};`  
+    - C) `char arr[] = "abc";`  
     - D) All of the above  
 
-12. What will be the output of this code?  
-    ```cpp
-    string str = "Hello";
-    str[0] = 'J';
-    cout << str;
-    ```  
-    - A) `Jello`  
-    - B) `Hello`  
-    - C) Compilation error  
-    - D) Undefined behavior  
+13. If `char str[] = {'a', 'b', 'c', 'd', '\0'};`, what is the value of `str[4]`?  
+    - A) `a`  
+    - B) `d`  
+    - C) `\0`  
+    - D) Undefined  
 
-13. How do you declare an empty string in C++?  
-    - A) `string s;`  
-    - B) `char s[] = "";`  
-    - C) `string s = "";`  
-    - D) All of the above  
+14. What will happen if you print `char str[5] = {'a', 'b', 'c', 'd'};` using `cout`?  
+    - A) It prints `abcd`.  
+    - B) It throws a compilation error.  
+    - C) It results in undefined behavior.  
+    - D) It prints ASCII values of characters.  
 
-14. What will happen if you try to access `str[6]` in this code?  
-    ```cpp
-    string str = "Code";
-    cout << str[6];
-    ```  
-    - A) Prints garbage value  
-    - B) Compilation error  
-    - C) Program crashes  
-    - D) `\0`  
-
-15. Which of the following correctly initializes a character array as a string?  
-    - A) `char arr[4] = "abc";`  
-    - B) `char arr[] = "abc";`  
-    - C) `char arr[5] = {'a', 'b', 'c', '\0'};`  
-    - D) All of the above  
-
+15. Which of the following correctly declares an array of strings?  
+    - A) `string arr[] = {"One", "Two", "Three"};`  
+    - B) `char arr[][5] = {"One", "Two", "Three"};`  
+    - C) `char arr[] = {'O', 'n', 'e'};`  
+    - D) Both A and B  
 
 
