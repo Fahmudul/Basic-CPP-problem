@@ -5,7 +5,7 @@
 ---
 
 ### **Problem - 1: Restaurant Order Management System**
-Create a simple Restaurant Order Management System. The program should present the following menu options:  
+The Gourmet Bistro, a popular restaurant in the heart of the city, is bustling with customers and needs an efficient way to handle orders. To simplify operations and enhance customer experience, the restaurant wants a digital Gourmet Bistro Management System that allows customers to view the menu, place orders, and review their order summaries. The system should offer a menu with items like Cheeseburgers, Pizza, Pasta, and Sandwiches along with their prices. Customers can select items, specify quantities, and view a detailed summary of their orders, including total cost. If no order is placed, the system should notify them. After each action, the system will ask if they want to perform another, and it will validate inputs to ensure smooth operation. The program will terminate when the customer chooses to exit.
 1. View Menu:  
    - The program displays a menu of items with their corresponding prices:  
      ```
