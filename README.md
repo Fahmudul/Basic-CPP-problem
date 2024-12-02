@@ -32,32 +32,47 @@ After completing an action, the program will ask the user if they want to perfor
 
 ---
 
-### **Problem - 2: Library Management System**
-Create a simple Library Management System that allows users to manage books. The program should present the following menu options:  
-1. Add a Book:  
-   - The user will enter the name of a book.  
-   - The program will add the book to an array and display a success message. (The library can hold a maximum of 5 books.)  
-2. View All Books:  
-   - Display all the books currently in the library.  
-   - If no books have been added yet, display: "The library is empty."  
-3. Search for a Book:  
-   - The user will enter the name of a book.  
-   - The program will search for the book in the array and display whether it is found or not.  
-4. Exit:  
-   - End the program.  
+### **Problem - 2: Library Management System**  
 
-After completing an action, the program will ask the user if they want to perform another action (enter 'y' or 'n') and loop until the user decides to exit. The program should validate inputs and handle errors gracefully.  
+Nestled in the heart of the bustling city is the City Public Library, a haven for book lovers and a repository of knowledge. Over the years, the library has been a vital resource for students, researchers, and casual readers alike. However, the increasing footfall and demand for streamlined operations have led the library administration to seek a digital solution—a Library Management System to manage its inventory efficiently. The library's management team has outlined the following requirements for the system, which should be easy to use yet robust enough to handle essential operations.  
 
-**Requirements:**  
-1. Use an array to store book names.  
-2. Use switch-case, loops, and conditional statements for logic.  
-3. Handle invalid inputs (e.g., trying to add more than 5 books) and provide clear feedback.
+The library operates on a strict capacity policy due to space constraints, allowing a maximum of **5 books** in its collection at any given time. Books in the collection are rotated regularly to ensure diversity, and a manual system has proven to be cumbersome, especially during peak hours.  
 
----
+The Library Management System should provide the following features:  
 
-Here are three new scenario-based problems with longer setups to introduce some confusion but still grounded in basic concepts like arrays, loops, conditional statements, and switch-case. 
+1. **Add a Book**:  
+   - Patrons or staff can add the name of a book to the library's collection.  
+   - A success message should confirm the addition:  
+     `"Book successfully added to the library."`  
+   - If the library has reached its maximum capacity of 5 books, further additions should be blocked, and the system should display:  
+     `"Library is full. Cannot add more books."`  
+   - Duplicate entries should be checked, as the system must not allow the same book to be added multiple times.  
 
----
+2. **View All Books**:  
+   - At any point, users can view the list of books in the library's collection.  
+   - If no books have been added, the system should display:  
+     `"The library is empty. No books to display."`  
+   - The book titles should appear in the order they were added to the collection.  
+
+3. **Search for a Book**:  
+   - Users can search for a specific book by entering its name.  
+   - The system should verify if the book is in the collection and display one of the following messages:  
+     - `"Book found in the library."`  
+     - `"Book not found in the library."`  
+   - The search functionality should be case-sensitive and should match the exact title entered.  
+
+4. **Exit**:  
+   - Users should be able to exit the program when desired.  
+   - The system should confirm the termination with a friendly message:  
+     `"Thank you for using the City Public Library System. Goodbye!"`  
+
+**Additional Requirements:**  
+- After completing an action, the system should prompt users with a choice to perform another action or exit. The user should be able to enter 'y' or 'n'.  
+- Invalid inputs (e.g., selecting options outside 1-4 or entering invalid book names) should be handled gracefully with an error message:  
+  `"Invalid input. Please try again."`  
+- The program should loop indefinitely until the user chooses to exit.  
+
+While the task appears straightforward at first glance, the challenge lies in ensuring smooth operations, validating inputs, and managing edge cases such as duplicate entries and handling a full library. The system must also ensure user-friendliness by providing clear messages and seamless navigation through the menu options.  
 
 ### **Problem 3: City Weather Tracker**  
 You are tasked with creating a weather tracking program for a fictional weather monitoring agency. The program should allow users to:  
