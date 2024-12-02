@@ -25,6 +25,10 @@ int main()
     case '1':
       // Add movie name to movieName array
       cout << "Enter your favoirte movie name: " << endl;
+      // though we are using string we should use getline to take any string including white space. but out syllabus has some boundaries. so for that reason we will give user input without any white space
+// example.
+// new movie x (wrong)
+// newmovie ✔ (correct)
       cin >> movieNameArray[currentIndex];
       // Add rating to rating array
       cout << "Enter your favorite movie rating: " << endl;
@@ -73,6 +77,7 @@ int main()
       string movieName;
       cout << "Enter the movie name to see its rating: " << endl;
       cin >> movieName;
+      //here also we will give any input without white space
       int movieFoundAtIndex = 0;
       for (int i = 0; i < currentIndex; i++)
       {
